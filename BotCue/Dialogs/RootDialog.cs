@@ -39,11 +39,11 @@ namespace BotCue.Dialogs
                 return;
             }
 
-            if (activity.Text.Equals("/start"))
+            /*if (activity.Text.Equals("/start"))
             {
                 await context.Forward(new DialogSegnalazione(), ResumeToRoot, activity, CancellationToken.None);
                 return;
-            }
+            }*/
 
             if (activity.Text.Equals("/volontari"))
             {

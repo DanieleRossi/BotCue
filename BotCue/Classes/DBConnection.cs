@@ -231,11 +231,15 @@ namespace BotCue.Classes
             }
         }
 
-        public List<String[]> getEventi()
+        public List<String[]> getEventi(bool today = true)
         {
             List<String[]> eventi = new List<String[]>();
 
             string query = "SELECT * FROM evento";
+            if (today)
+            {
+                query += " WHERE data = cast(now() as date)";
+            }
 
             //Open connection
             if (this.OpenConnection() == true)
