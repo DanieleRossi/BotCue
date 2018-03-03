@@ -1,0 +1,57 @@
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\Bot Application.dll.config
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\Bot Application.dll
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\Bot Application.pdb
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\Autofac.dll
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\Chronic.dll
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\Microsoft.Bot.Builder.Autofac.dll
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\Microsoft.Bot.Builder.dll
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\Microsoft.Bot.Builder.Extensions.dll
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\Microsoft.Bot.Connector.dll
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\Microsoft.Rest.ClientRuntime.dll
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\Newtonsoft.Json.dll
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\System.Net.Http.Formatting.dll
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\System.Web.Http.dll
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\System.Web.Http.WebHost.dll
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\Autofac.xml
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\Microsoft.Bot.Builder.xml
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\Microsoft.Bot.Builder.Autofac.xml
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\Microsoft.Bot.Builder.Extensions.xml
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\Microsoft.Bot.Connector.xml
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\Microsoft.IdentityModel.Logging.xml
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\Microsoft.IdentityModel.Protocols.xml
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\Microsoft.Rest.ClientRuntime.xml
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\Microsoft.WindowsAzure.Configuration.xml
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\Newtonsoft.Json.xml
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\System.Net.Http.Formatting.xml
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\System.Web.Http.xml
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\System.Web.Http.WebHost.xml
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\ar\Microsoft.Bot.Builder.resources.dll
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\cs\Microsoft.Bot.Builder.resources.dll
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\de-dE\Microsoft.Bot.Builder.resources.dll
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\en\Microsoft.Bot.Builder.resources.dll
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\es\Microsoft.Bot.Builder.resources.dll
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\fa\Microsoft.Bot.Builder.resources.dll
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\fr\Microsoft.Bot.Builder.resources.dll
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\it\Microsoft.Bot.Builder.resources.dll
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\ja\Microsoft.Bot.Builder.resources.dll
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\nl\Microsoft.Bot.Builder.resources.dll
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\pt-BR\Microsoft.Bot.Builder.resources.dll
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\ru\Microsoft.Bot.Builder.resources.dll
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\obj\Debug\BotCue.csprojResolveAssemblyReference.cache
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\obj\Debug\BotCue.csproj.CoreCompileInputs.cache
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\obj\Debug\Bot Application.dll
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\obj\Debug\Bot Application.pdb
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\MySql.Data.dll
+C:\Users\Daniele Rossi\Documents\Visual Studio Projects\BotCue\BotCue\bin\MySql.Data.xml
