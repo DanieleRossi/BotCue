@@ -51,6 +51,18 @@ namespace BotCue.Dialogs
                 return;
             }
 
+            if (activity.Text == "/panel")
+            {
+                await context.Forward(new DialogAzioniCoordinatore(), ResumeToRoot, activity, CancellationToken.None);
+                return;
+            }
+
+            if (activity.Text == "/volontario")
+            {
+                await context.Forward(new DialogVolontario(), ResumeToRoot, activity, CancellationToken.None);
+                return;
+            }
+
             if (activity.Text.Contains("RispostaVolontariPosto"))
             {
                 String id = activity.Text.Split('_')[0];
@@ -97,6 +109,7 @@ namespace BotCue.Dialogs
                 try
                 {
                     await client.Conversations.SendToConversationAsync((Activity)message).ConfigureAwait(false);
+                    await context.PostAsync("Risposta inviata");
                 }
                 catch (Microsoft.Rest.HttpOperationException httpEx)
                 {
@@ -105,22 +118,13 @@ namespace BotCue.Dialogs
                 return;
             }
 
-            await context.PostAsync("Mi spiace non ho capito");
+            if(activity.Text == "/help")
+            {
+                await context.PostAsync("Elenco comandi disponibili: \n\n/conf \n\n/panel \n\n/volontario \n\n/deleteprofile");
+                return;
+            }
 
-            //StateClient sc = activity.GetStateClient();
-            //BotData userData = sc.BotState.GetPrivateConversationData(activity.ChannelId, activity.Conversation.Id, activity.From.Id);
-            //var boolProfileComplete = userData.GetProperty<bool>("ProfileComplete");
-
-            //if (!boolProfileComplete)
-            //{
-            //    await Conversation.SendAsync(activity, MakeFormDialog);
-            //}
-            //else
-            //{
-            //    await Conversation.SendAsync(activity, () => new Hackaton.Dialogs.DialogSegnalazione());
-            //}
-
-            // TODO: Put logic for handling user message here
+            await context.PostAsync("Comando non riconosciuto!\n\nElenco comandi disponibili: \n\n/conf \n\n/panel \n\n/volontario \n\n/deleteprofile");
 
             context.Wait(MessageReceivedAsync);
         }

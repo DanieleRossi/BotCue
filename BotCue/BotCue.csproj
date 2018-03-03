@@ -160,6 +160,9 @@
     <Compile Include="Classes\Utente.cs" />
     <Compile Include="Controllers\MessagesController.cs" />
     <Compile Include="Controllers\NotifyController.cs" />
+    <Compile Include="Dialogs\DialogAzioniCoordinatore.cs" />
+    <Compile Include="Dialogs\DialogReclutamentoExtra.cs" />
+    <Compile Include="Dialogs\DialogVolontario.cs" />
     <Compile Include="Dialogs\DialogVolontariPosto.cs" />
     <Compile Include="Dialogs\DialogSegnalazione.cs" />
     <Compile Include="Dialogs\FormDialog.cs" />

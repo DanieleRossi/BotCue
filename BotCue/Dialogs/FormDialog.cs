@@ -97,7 +97,8 @@ namespace BotCue.Dialogs
 
             });
 
-            form.Configuration.Confirmation = "Tutto corretto?";
+            string[] s = { "si", "yes", "Si", "Yes" };
+            form.Configuration.Yes = s;
 
             return form.Build();
         }
