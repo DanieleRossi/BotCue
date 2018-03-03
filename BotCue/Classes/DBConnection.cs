@@ -90,7 +90,184 @@ namespace BotCue.Classes
             return false;
         }
 
-        public List<String> 
+        public List<String[]> getIncrociEvento(int id_evento)
+        {
+            List<String[]> eventi = new List<String[]>();
+
+            string query = "SELECT * FROM incroci WHERE id_evento ="+id_evento;
+
+            //Open connection
+            if (this.OpenConnection() == true)
+            {
+                //Create Command
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                //Create a data reader and Execute the command
+                MySqlDataReader dataReader = cmd.ExecuteReader();
+
+                //Read the data and store them in the list
+                while (dataReader.Read())
+                {
+                    eventi.Add(new String[]{
+                        "Incrocio_" + dataReader["id_incrocio"],
+                        dataReader["strada"] + ""
+                    });
+                }
+
+                //close Data Reader
+                dataReader.Close();
+
+                //close Connection
+                this.CloseConnection();
+
+                //return list to be displayed
+                return eventi;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public Utente getUtente(String user_id)
+        { 
+
+            string query = "SELECT * FROM utenti WHERE user_id =" + user_id;
+            
+            if (this.OpenConnection() == true)
+            {
+                Utente user = null; ;
+                //Create Command
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                //Create a data reader and Execute the command
+                MySqlDataReader dataReader = cmd.ExecuteReader();
+
+                //Read the data and store them in the list
+                while (dataReader.Read())
+                {
+                    user = new Utente(int.Parse(user_id), int.Parse(user_id), dataReader["telefono"].ToString(), dataReader["nome"].ToString(), dataReader["cognome"].ToString());
+                }
+
+                //close Data Reader
+                dataReader.Close();
+
+                //close Connection
+                this.CloseConnection();
+
+                //return list to be displayed
+                return user;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public String getNomeStrada(String id_incrocio)
+        {
+            string query = "SELECT * FROM incroci WHERE id_incrocio =" + id_incrocio;
+            String nome = "";
+
+            //Open connection
+            if (this.OpenConnection() == true)
+            {
+                //Create Command
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                //Create a data reader and Execute the command
+                MySqlDataReader dataReader = cmd.ExecuteReader();
+
+                //Read the data and store them in the list
+                while (dataReader.Read())
+                {
+                    nome = dataReader["strada"].ToString();
+                }
+
+                //close Data Reader
+                dataReader.Close();
+
+                //close Connection
+                this.CloseConnection();
+
+                //return list to be displayed
+                return nome;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public List<String> getIdUtenti(int id_evento, int id_incrocio)
+        {
+            List<String> id = new List<String>();
+
+            string query = "SELECT * FROM incroci_utenti WHERE id_evento =" + id_evento + " AND id_incrocio = " + id_incrocio;
+
+            //Open connection
+            if (this.OpenConnection() == true)
+            {
+                //Create Command
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                //Create a data reader and Execute the command
+                MySqlDataReader dataReader = cmd.ExecuteReader();
+
+                //Read the data and store them in the list
+                while (dataReader.Read())
+                {
+                    id.Add(dataReader["user_id"].ToString());
+                }
+
+                //close Data Reader
+                dataReader.Close();
+
+                //close Connection
+                this.CloseConnection();
+
+                //return list to be displayed
+                return id;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public List<String[]> getEventi()
+        {
+            List<String[]> eventi = new List<String[]>();
+
+            string query = "SELECT * FROM evento";
+
+            //Open connection
+            if (this.OpenConnection() == true)
+            {
+                //Create Command
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                //Create a data reader and Execute the command
+                MySqlDataReader dataReader = cmd.ExecuteReader();
+
+                //Read the data and store them in the list
+                while (dataReader.Read())
+                {
+                    eventi.Add(new String[]{
+                        "Evento_" + dataReader["id_evento"],
+                        dataReader["nome"] + ""
+                    });
+                }
+
+                //close Data Reader
+                dataReader.Close();
+
+                //close Connection
+                this.CloseConnection();
+
+                //return list to be displayed
+                return eventi;
+            }
+            else
+            {
+                return null;
+            }
+        }
 
         public bool insersciInteressiUtente(int user_id, List<String> comunita)
         {
@@ -125,7 +302,7 @@ namespace BotCue.Classes
             {
                 foreach (String com in comunita)
                 {
-                    string query = "SELECT id FROM comunita WHERE nome = '" + com + "'";
+                    string query = "SELECT id FROM comunita WHERE nome LIKE '%" + com + "%'";
                     //Create Command
                     MySqlCommand cmd = new MySqlCommand(query, connection);
                     //Create a data reader and Execute the command
